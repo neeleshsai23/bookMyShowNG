@@ -1,0 +1,122 @@
+<nav class="nav-bar">
+    <div class="nav-bar-col1">
+        <a routerLinnk='/movies'>
+            <img class="logo" src="../../assets/images/logo1.png" />
+        </a>
+    </div>
+    <div class="nav-bar-col2">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input class="search" type="text" placeholder="Search for Movies"/>
+    </div>
+    <div class="nav-bar-col3">
+        <button routerLink='/userLogin' *ngIf='displayLoginbtn()'>Login</button>
+        <button (click)='logout()'>Logout</button>
+    </div>
+
+</nav>
+<div class="categories">
+    <div class="clist1">
+        <a routerLink='/movies' class="links">Movies</a>
+        <a class="links">Events</a>
+        <a class="links">Plays</a>
+        <a class="links">Sports</a>
+        <a class="links">Activities</a>
+        <a class="links">Monuments</a>
+        <a class="links">Fanhood</a>
+        <a class="links">Buzz</a>
+    </div>
+    <div class="clist2">
+        <a class="links">List You Show</a>
+        <a class="links">Corporates</a>
+        <a class="links">Offers</a>
+        <a class="links">Gift Cards</a>
+    </div>
+</div>
+<div class="imageslides">
+    <div  id="slideshow" class="carousel slide" data-ride="carousel" data-pause="hover">
+        <div id="carouselindicators" class="carousel-indicators">
+            <li data-target="#slideshow" data-slide-to="0" class="active"></li>
+            <li data-target="#slideshow" data-slide-to="1"></li>
+            <li data-target="#slideshow" data-slide-to="2"></li>
+            <li data-target="#slideshow" data-slide-to="3"></li>
+        </div>
+        <div  class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/images/slider1.jpg" alt="slider1"/>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/slider2.jpg" alt="slider2"/>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/slider3.jpg" alt="slider3"/>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/slider4.jpg" alt="slider4"/>
+            </div>
+        </div>
+        <div id="carousel-controls">
+            <a class="carousel-control-prev" href="#slideshow" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#slideshow" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="events">
+    <div class="event1">
+        <img src="assets/images/event1.jpg" alt="Event 1"/>
+        <p>Get Set Shoot</p>
+       
+    </div>
+    <div class="event2">
+        <img src="assets/images/event2.jpg" alt="Event 2"/>
+        <p>Free Fire Mobile Tournament</p>
+    </div>
+    <div class="event3">
+        <img src="assets/images/event3.jpg" alt="Event 3"/>
+        <p>Maharashtra 10KM Challenge</p>
+    </div>    
+</div>
+
+<footer class="container-fluid">
+    <div class="container footer">
+        <div class="section-links">
+            <h6>Explore</h6>
+            <a class="sectionlink">MOVIE REVIEWS</a>
+            <a class="sectionlink">Masand Movie Reviews</a>
+            <a class="sectionlink">Anupama Chopra Movie Review</a>
+            <a class="sectionlink">Film Reviews</a>
+            <a class="sectionlink">Guest Blogging</a> 
+        </div>  
+    </div>
+</footer>
+
+<!-- Sidebar and Overlay -->
+<!-- <div id="overlay" class="overlay" onclick="sidebarclose()"> </div>
+
+<div id="sidebar" class="sidebar">
+    <header class="sidebar-header">
+        <h3>Hey <span id="showusername"></span>!</h3>
+    </header>
+    <div class="sidebar-content">
+        <div id="auth">
+            <a id="authlink">Login / Register</a>
+        </div>
+        <div class="payment" onclick="window.location.href='payment.html'">
+            <div>
+                <i class="fa fa-inr" aria-hidden="true"></i>
+                <a>Payment</a>
+            </div>
+            <div>
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div id="logout">
+            <i class="fa fa-sign-out" aria-hidden="true"></i>
+            <a>Logout</a>
+        </div>
+    </div>
+</div> -->

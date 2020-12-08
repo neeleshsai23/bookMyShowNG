@@ -1,0 +1,12 @@
+.adminloginform {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(51, 53, 69, 1);
+}
+
+label {
+  color: white;
+}

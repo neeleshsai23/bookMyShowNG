@@ -1,0 +1,267 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a:hover,
+button:hover {
+  cursor: pointer;
+}
+
+.nav-bar {
+  background: rgba(51, 53, 69, 1);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo {
+  width: 120px;
+  height: 40px;
+}
+
+.nav-bar-col2 {
+  background: rgba(255, 255, 255, 1);
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+.nav-bar-col3 button {
+  border: 1px solid black;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.search {
+  width: 350px;
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.fa-search {
+  color: rgba(51, 53, 69, 1);
+}
+
+.fa-bars {
+  color: rgba(255, 255, 255, 1);
+}
+
+.categories {
+  margin-top: 64px;
+  width: 100%;
+  height: 40px;
+  background: rgb(42, 44, 54);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.links {
+  color: rgba(200, 200, 200, 1);
+  padding: 0 10px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.links:hover {
+  text-decoration: none;
+  color: rgba(240, 240, 240, 1);
+}
+
+.imageslides {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 400px;
+}
+
+#carousel-controls {
+  display: none;
+}
+
+.linkactive {
+  color: rgba(255, 255, 255, 1);
+}
+
+.movies,
+.events {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.movies div,
+.events div {
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 0 5px 0 rgba(180, 180, 180, 1);
+  background: rgba(230, 230, 230, 1);
+  margin: 30px 32px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.events div {
+  background: rgba(255, 255, 255, 1);
+  align-items: flex-start;
+}
+
+.movies div img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+}
+
+.events div img {
+  width: 100%;
+  height: 90%;
+}
+
+.movies div p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.events div p {
+  padding: 5px;
+  font-weight: bold;
+}
+
+footer {
+  background: rgb(51, 51, 56);
+  height: 300px;
+  margin-top: 30px;
+}
+
+.footer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.section-links {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 1);
+}
+
+.sectionlink {
+  color: rgba(255, 255, 255, 1);
+  font-weight: lighter;
+}
+
+.sectionlink:hover {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+
+/* Sidebar Styles */
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.overlay {
+  display: none;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.overlay:hover {
+  cursor: pointer;
+}
+
+.sidebar {
+  display: none;
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar-header {
+  position: absolute;
+  width: 100%;
+  height: 64px;
+  background: rgba(51, 53, 69, 1);
+  color: rgba(255, 255, 255, 1);
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-content {
+  margin-top: 64px;
+  height: 100%;
+  background: rgba(255, 255, 255, 1);
+}
+
+#auth {
+  padding: 30px 20px;
+  box-shadow: 0px 2px 5px 0 rgba(230, 230, 230, 1);
+  text-align: right;
+}
+
+#auth a {
+  padding: 10px 8px;
+  color: rgba(3, 120, 255, 1);
+  border: 1px solid rgba(3, 120, 255, 1);
+  border-radius: 5px;
+}
+
+#logout {
+  padding: 20px;
+  border-bottom: 1px solid rgba(230, 230, 230, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logout a {
+  margin-left: 10px;
+}
+
+.payment {
+  padding: 20px;
+  border-bottom: 1px solid rgba(230, 230, 230, 1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-inr {
+  margin-right: 10px;
+}
+
+.payment:hover,
+#logout:hover {
+  background: rgba(230, 230, 230, 1);
+  cursor: pointer;
+}

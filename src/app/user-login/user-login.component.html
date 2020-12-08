@@ -1,0 +1,23 @@
+<div class="userloginform">
+<div class="container">
+    <form class="form-horizontal loginform" [formGroup]='loginform' (ngSubmit)='onSubmit(loginform.value)'>
+        <div class="form-group">
+            <label class="col-sm-2">Username:</label>
+            <div class="col-sm-6">
+                <input formControlName='username' class="form-control" type="text">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2">Password:</label>
+            <div class="col-sm-6">
+                <input formControlName='password' class="form-control" type="password">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-2">
+                <input class="form-control btn btn-primary" type="submit" value="Login">
+            </div>
+        </div>
+    </form>
+</div>
+</div>

@@ -1,0 +1,124 @@
+<nav class="nav-bar">
+    <div class="nav-bar-col1">
+        <a routerLink='/movies'>
+            <img class="logo" src="../../assets/images/logo1.png" />
+        </a>
+    </div>
+    <div class="nav-bar-col2">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input class="search" type="text" placeholder="Search for Movies"/>
+    </div>
+    <div class="nav-bar-col3">
+        <button routerLink='/userLogin' *ngIf='displayLoginbtn()'>Login</button>
+        <button (click)='logout()'>Logout</button>
+    </div>
+
+</nav>
+<div class="categories">
+    <div class="clist1">
+        <a href="movies.html" class="links">Movies</a>
+        <a class="links">Events</a>
+        <a class="links">Plays</a>
+        <a class="links">Sports</a>
+        <a class="links">Activities</a>
+        <a class="links">Monuments</a>
+        <a class="links">Fanhood</a>
+        <a class="links">Buzz</a>
+    </div>
+    <div class="clist2">
+        <a class="links">List You Show</a>
+        <a class="links">Corporates</a>
+        <a class="links">Offers</a>
+        <a class="links">Gift Cards</a>
+    </div>
+</div>
+
+<div class="moviename">
+    <h4 id="movienametext"></h4>
+    <p>Ticket Price - ₹150/-</p>
+</div>
+
+<div class="hallview">
+    <div class="row">
+        <div class="row-heading">
+            <p>A</p>
+        </div>
+        <div class="seats">
+            <p>1</p>
+            <i id="A1" (click)="selectseat($event)" class="fa fa-square fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class="seats">
+            <p>2</p>
+            <i id="A2" (click)="selectseat($event)" class="fa fa-square fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class="seats">
+            <p>3</p>
+            <i id="A3" (click)="selectseat($event)" class="fa fa-square fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class="seats">
+            <p>4</p>
+            <i id="A4" (click)="selectseat($event)" class="fa fa-square fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class="seats">
+            <p>5</p>
+            <i id="A5" (click)="selectseat($event)" class="fa fa-square fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class="seats">
+            <p>6</p>
+            <i id="A6" (click)="selectseat($event)" class="fa fa-square fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class="seats">
+            <p>7</p>
+            <i id="A7" (click)="selectseat($event)" class="fa fa-square fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class="seats">
+            <p>8</p>
+            <i id="A8" (click)="selectseat($event)" class="fa fa-square fa-2x" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div class="row">
+        <div class="row-heading">
+            <p >B</p>
+        </div>
+        <div class="seats">
+            <p>1</p>
+            <i id="B1" (click)="selectseat($event)" class="fa fa-square fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class="seats">
+            <p>2</p>
+            <i id="B2" (click)="selectseat($event)" class="fa fa-square fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class="seats">
+            <p>3</p>
+            <i id="B3" (click)="selectseat($event)" class="fa fa-square fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class="seats">
+            <p>4</p>
+            <i id="B4" (click)="selectseat($event)" class="fa fa-square fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class="seats">
+            <p>5</p>
+            <i id="B5" (click)="selectseat($event)" class="fa fa-square fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class="seats">
+            <p>6</p>
+            <i id="B6" (click)="selectseat($event)" class="fa fa-square fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class="seats">
+            <p>7</p>
+            <i id="B7" (click)="selectseat($event)" class="fa fa-square fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class="seats">
+            <p>8</p>
+            <i id="B8" (click)="selectseat($event)" class="fa fa-square fa-2x" aria-hidden="true"></i>
+        </div>
+    </div>
+    
+</div>
+
+
+
+<div id="price">
+    <p id="showprice"></p>
+    <button type="button" class="proceedbtn" routerLink="/payment">Proceed</button>
+</div>

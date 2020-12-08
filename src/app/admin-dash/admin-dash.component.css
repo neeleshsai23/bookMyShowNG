@@ -1,0 +1,20 @@
+.adminDash {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(51, 53, 69, 1);
+}
+
+li {
+  color: whitesmoke;
+}
+
+li.selected {
+  color: #ffd700;
+}
+
+label {
+  color: white;
+}

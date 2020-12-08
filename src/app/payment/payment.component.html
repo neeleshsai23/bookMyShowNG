@@ -1,0 +1,45 @@
+<nav class="nav-bar">
+    <div class="nav-bar-col1">
+        <a routerLink='/movies'>
+            <img class="logo" src="../../assets/images/logo1.png" />
+        </a>
+    </div>
+    <div class="nav-bar-col2">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input class="search" type="text" placeholder="Search for Movies"/>
+    </div>
+    <div class="nav-bar-col3">
+        <button routerLink='/userLogin' *ngIf='displayLoginbtn()'>Login</button>
+        <button (click)='logout()'>Logout</button>
+        
+    </div>
+
+</nav>
+<div class="categories">
+    <div class="clist1">
+        <a routerLink='/movies' class="links">Movies</a>
+        <a class="links">Events</a>
+        <a class="links">Plays</a>
+        <a class="links">Sports</a>
+        <a class="links">Activities</a>
+        <a class="links">Monuments</a>
+        <a class="links">Fanhood</a>
+        <a class="links">Buzz</a>
+    </div>
+    <div class="clist2">
+        <a class="links">List You Show</a>
+        <a class="links">Corporates</a>
+        <a class="links">Offers</a>
+        <a class="links">Gift Cards</a>
+    </div>
+</div>
+<div class="paymentdiv">
+    <div class="paymentdetails">
+        <div class="paymentinfo"><p>Movie </p><span id="moviename"></span></div>
+        <div class="paymentinfo"><p>Seats </p><span id="seats"></span></div>
+        <div class="paymentinfo"><p>Ticket Price </p><span id="ticketprice"></span></div>
+        <div class="paymentinfo"><p>Tax </p><span id="taxprice"></span></div>
+        <div class="paymentinfo"><p>Total Price </p><span id="totalprice"></span></div>
+        <div class="paymentbtn"><button class="paybtn" type="button">Pay</button></div>
+    </div>
+</div>

@@ -1,0 +1,64 @@
+<div class="adminDash">
+<div class="container">
+    <form class="form-horizontal"  [formGroup]='movieForm' (ngSubmit)='onSubmit(movieForm.value)'>
+        <div class="form-group">
+            <label class="col-sm-2">Movie Name:</label>
+            <div class="col-sm-6">
+                <input class="form-control" type="text" formControlName='name'>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2">Rating:</label>
+            <div class="col-sm-6">
+                <ul class="list-inline rating-list" *ngFor="let star of stars" style="display: inline-block" >
+                    <li (click)="countStar(star)" [ngClass]="{'selected': (star <= selectedValue)}">
+                        <i class="fa fa-star"></i>
+                     </li>
+                </ul>     
+                <!-- <input class="form-control" type="password" formControlName='rating' > -->
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2">Description:</label>
+            <div class="col-sm-6">
+                <input class="form-control" type="text" formControlName='description'>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2">Image Url:</label>
+            <div class="col-sm-6">
+                <input class="form-control" type="email" formControlName='imageUrl'>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2">Youtube Url:</label>
+            <div class="col-sm-6">
+                <input class="form-control" type="text" formControlName='youtubeUrl'>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2">Language:</label>
+            <div class="col-sm-6">
+                <input class="form-control" type="text" formControlName='language'>
+                <!-- <select>
+                    <option>EMP</option>
+                    <option>ADMIN</option>
+                </select> -->
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-2">
+                <input class="form-control  btn btn-primary" type="submit" value='Submit'>
+            </div>
+        </div>
+
+        <!-- <div class="form-group">
+            <div class="col-sm-2">
+                <input class="form-control  btn btn-primary" type="button" value='Goto Login' routerLink='/login'>
+            </div>
+        </div> -->
+
+    </form>
+
+</div>
+</div>

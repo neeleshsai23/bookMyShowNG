@@ -1,0 +1,52 @@
+<nav class="nav-bar">
+    <div class="nav-bar-col1">
+        <a routerLinnk='/movies'>
+            <img class="logo" src="../../assets/images/logo1.png" />
+        </a>
+    </div>
+    <div class="nav-bar-col2">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input class="search" type="text" placeholder="Search for Movies"/>
+    </div>
+    <div class="nav-bar-col3">
+        <button routerLink='/userLogin' *ngIf='displayLoginbtn()'>Login</button>
+        <button (click)='logout()'>Logout</button>
+    </div>
+
+</nav>
+<div class="categories">
+    <div class="clist1">
+        <a routerLink='/movies' class="links linkactive">Movies</a>
+        <a class="links">Events</a>
+        <a class="links">Plays</a>
+        <a class="links">Sports</a>
+        <a class="links">Activities</a>
+        <a class="links">Monuments</a>
+        <a class="links">Fanhood</a>
+        <a class="links">Buzz</a>
+    </div>
+    <div class="clist2">
+        <a class="links">List You Show</a>
+        <a class="links">Corporates</a>
+        <a class="links">Offers</a>
+        <a class="links">Gift Cards</a>
+    </div>
+</div>
+<div class="moviesbtn">
+    <button (click)="showTeluguMovies()">Telugu</button>
+    <button (click)="showHindiMovies()">Hindi</button>
+    <button (click)="showEnglishMovies()">English</button>
+
+</div>
+<div class="movies" *ngFor='let movie of movieDetails'>
+    <div>
+        <img src={{movie.imageUrl}} alt={{movie.name}}/>
+        <!-- <p>{{movie.name}}</p>
+        
+        <p>{{movie.description}}</p> -->
+        <p>Rating:{{movie.rating}}</p>
+
+        <button id={{movie.name}} type="button" (click)="bookmovie($event)" class="bookbtn">Book Now</button>
+    </div>
+    
+</div>
